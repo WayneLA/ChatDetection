@@ -1,0 +1,111 @@
+.MainContainer {
+    max-width: 1920px;
+    min-width: 1080px; /*1080为移动用户（竖着的时候）最大的宽度*/
+}
+
+#LoginBox {
+    width: 24em;
+    border: 1px solid black;
+    border-radius: 20px;
+
+    position: absolute;
+    top: 54%;
+}
+
+@media screen and (max-width: 1980px) {
+   #LoginBox {
+       left: 60%;
+   }
+}
+
+@media screen and (min-width: 1980px) and (max-width: 2560px) {
+    #LoginBox {
+        left: 65%;
+    }
+}
+
+@media screen and (min-width: 2560px) and (max-width: 3840px) {
+    #LoginBox {
+        left: 70%;
+    }
+}
+
+@media screen and (min-width: 3840px) {
+    #LoginBox {
+        left: 75%;
+    }
+}
+
+#LoginInfoBox {
+    width: 75%;
+
+    margin: 0 auto 0.5em auto;
+}
+
+#LoginInfoBox div {
+    margin: 0.25em auto 1em auto;
+    padding: 0 0.5em;
+}
+
+.InputRow {
+    border: 1px black solid;
+    border-radius: 5px;
+}
+
+.InputRow td {
+    padding: .4em .1em;
+}
+
+.InputRow td:first-child {
+    vertical-align: middle;
+
+    position: relative;
+
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.InputRow td:first-child:hover {
+    cursor: default;
+}
+
+.InputRow td:first-child:after {
+    content: "";
+
+    height: 1.25em;
+    width: .0625em;
+
+    background-color: black;
+
+    position: absolute;
+    top: .5em;
+    left: 1.85em;
+}
+
+.InputRow tr td input[type="text"],
+.InputRow tr td input[type="password"]
+{
+    line-height: 1.5em;
+    width: auto;
+    border: 0;
+    margin-left: .5em;
+}
+
+.InputRow tr td input[type="text"]:focus,
+.InputRow tr td input[type="password"]:focus
+{
+    outline: none;
+}
+
+#LoginInfoBox>div:nth-child(3) {
+    text-align: left;
+}
+
+#AutoLoginCheckBox {
+    width: 0.75em;
+    height: 0.75em;
+
+    position: relative;
+    top: .05em;
+}

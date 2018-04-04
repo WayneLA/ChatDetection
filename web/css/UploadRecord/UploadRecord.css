@@ -1,0 +1,11 @@
+table {
+    width: 95%;
+}
+
+td:first-child {
+    width: 6em;
+}
+
+textarea {
+    width: 95%;
+}

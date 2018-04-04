@@ -1,0 +1,66 @@
+body {
+    min-width: 720px;
+
+    overflow-x: hidden;
+}
+
+.SideBar {
+    width: 30%;
+    min-width: 10em;
+    height: 100%;
+
+    background-color: cornflowerblue;
+
+    display: inline-block;
+    position: absolute;
+    left: -25%;
+}
+
+.SideBar+.MainContainer {
+    display: inline-block;
+    position: absolute;
+    left: 5%;
+}
+
+.SideBarSwitchBtn {
+    width: 3em;
+    height: 3em;
+
+    position: absolute;
+    bottom: .5em;
+    right: .5em;
+
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.SideBarSwitchBtn:hover {
+    cursor: pointer;
+}
+
+.SideBarContainer ul {
+    text-align: left;
+    list-style: none;
+
+    position: absolute;
+    top: 25%;
+}
+
+.SideBarContainer ul li {
+    font-size: 1.5em;
+    line-height: 2em;
+    color: white;
+}
+
+.SideBarContainer ul li a[class*="CurrPage"] {
+    color: #b26162;
+
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.SideBarContainer ul li a[class*="CurrPage"]:hover {
+    cursor: default;
+}

@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="ChatDetection:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/ChatDetection_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="ChatDetection/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="ChatDetection" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

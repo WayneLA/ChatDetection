@@ -1,0 +1,117 @@
+@media screen and (max-width: 1980px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1980px) and (max-width: 2560px) {
+    body {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 2560px) and (max-width: 3840px) {
+    body {
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 3840px) {
+    body {
+        font-size: 28px;
+    }
+}
+
+body {
+    width: 100%;
+    height: 100%;
+
+    text-align: center;
+    vertical-align: middle;
+}
+
+input {
+    display: inline-block;
+}
+
+input[type="text"], input[type="password"] {
+    text-indent: .25em;
+}
+
+input[type="text"]:hover, input[type="password"]:hover {
+    cursor: text;
+}
+
+input[type="checkbox"] {
+    margin-right: .25em;
+}
+
+.DateInputLabel {
+    position: relative;
+    top: .35em;
+}
+
+.Box {
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: .25em;
+}
+
+.Box .BoxTitle {
+    text-align: left;
+    text-indent: 1em;
+    font-size: 2em;
+    font-weight: bold;
+
+    position: relative;
+
+    margin-top: .4em;
+    margin-bottom: 1.25em;
+}
+
+.Box .BoxTitle::after {
+    content: "";
+    width: 100%;
+    height: 0.0625em;
+    background-color: black;
+
+    position: absolute;
+    top: 135%;
+    left: 0;
+}
+
+.MainContainer {
+    width: 95%;
+    height: 100%;
+
+    margin: auto;
+    overflow: scroll;
+    position: relative;
+}
+
+.ButtonBox {
+    font-size: 1.25em;
+    height: 1.75em;
+    width: 100%;
+
+    background-color: #9daca9;
+}
+
+.ButtonBox p {
+    cursor: default;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+
+    position: relative;
+    top: .35em;
+}
+
+.EnabledButtonBox:hover, .EnabledButtonBox p {
+    cursor: pointer;
+}
+
+.EnabledButtonBox:active {
+    background-color: #0000ee;
+}
